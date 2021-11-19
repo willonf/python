@@ -1,0 +1,3 @@
+Nome: Pedro | Nota: 8.0
+Nome: Maria | Nota: 10.0
+Nome: Hamilton | Nota: 7.5
