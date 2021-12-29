@@ -20,7 +20,7 @@ print(30 * "+=")
 # Filtrando valores abaixo da média
 res = filter(lambda x: x < media, dados)
 print(list(res))
-# Obs.: após utilizarmos a função map() depois da primeira utilização do resultado, ele é zerado.
+# Obs.: após utilizarmos a função filter() depois da primeira utilização do resultado, ele é zerado.
 print(list(res))
 print(30 * "+=")
 
