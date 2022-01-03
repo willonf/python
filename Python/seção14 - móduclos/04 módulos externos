@@ -1,0 +1,11 @@
+Para instalar módulos externos,
+é necessário usar o pip.
+
+https://pypi.org
+
+
+Módulo: É um arquivo Pthon que pode ter diversas funções;
+Pacote: É um diretório que contém uma coleção de módulos;
+
+Um módulo possui um arquivo dunder __init__.py, que não é obrigatório,
+mas ainda é utilizado para manter compatibilidade com versões 2.x do Python
