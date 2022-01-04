@@ -30,7 +30,7 @@ print(getsizeof({x * 10 for x in range(1000)}))
 # Dict comprehension
 print(getsizeof({x: x * 10 for x in range(1000)}))
 
-# Generator
+# Generator expression
 print(getsizeof(x * 10 for x in range(1000)))
 print(30 * "=+")
 
