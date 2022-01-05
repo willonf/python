@@ -10,15 +10,18 @@ titulo = 'f-string no Python'
 dificuldade = 'Básico'
 
 print(
-  f"Site: {site}\n"
-  f"Título: {titulo}\n"
-  f"Dificuldade: {dificuldade}"
+    f"Site: {site}\n"
+    f"Título: {titulo}\n"
+    f"Dificuldade: {dificuldade}"
 )
 # Formatação: %[flags][width][.precision]type
 # https://python-course.eu/python-tutorial/formatted-output.php
 num1 = 900000
 num2 = 700
-div = num1/num2
+div = num1 / num2
 print(f'{div:,.4f}')
 print(f'{div:_.4f}')
 print(f'{div:.4f}')
+
+nome = 'Willon'
+print(f'{nome=}')
