@@ -25,3 +25,9 @@ print(f'{div:.4f}')
 
 nome = 'Willon'
 print(f'{nome=}')
+print("Willon".center(20, '#'))
+print("Willon".rjust(20, '#'))
+print("Willon".ljust(20, '#'))
+
+nome: str = 'Willon'
+print(nome)
