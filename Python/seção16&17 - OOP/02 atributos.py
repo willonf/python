@@ -11,7 +11,7 @@ Visibilidade de atributos: em Python, por convenção, ficou estabelecido que to
 
 class Lampada:
 
-    def __init__(self, voltagem, cor):
+    def __init__(self, voltagem=None, cor=None):
         self.__voltagem = voltagem
         self.__cor = cor
         self.__ligada = False
@@ -91,3 +91,9 @@ del ac1.nome
 print(ac3.__dict__)  # Não possui mais o atributo idade e count
 print(ac1.__dict__)  # Não possui mais o atributo nome
 print(ac1.__dict__)  # Não possui mais o atributo nome
+
+my_lamp2 = Lampada()
+data = {'voltagem': 220, 'cor': 'Azul'}
+for key, value in data.items():
+    setattr(__obj=my_lamp2, __name=key, __value=value)
+print(my_lamp2)
