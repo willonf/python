@@ -110,7 +110,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-est-dados-udemy
 
 # Spyder project settings
 .spyderproject
