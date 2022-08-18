@@ -19,15 +19,14 @@ class AnalisadorLexico:
         self.__operadores = '[\+\-\*/%]'
         self.__literais_int_float = '[+-]?[0-9]+([.][0-9]*)?'
         self.__variavel = self.__IDENTIFICADOR + '(\s)*' + '(\s*)=(\s*)' + self.__literais_int_float
-        # self.__expressao_aritmetica = '(' + self.__literais_int_float + ')+\s*' + self.__operadores + '\s*(' + self.__literais_int_float + ')+'
-        self.__expressao_aritmetica = '([+-]?\d+([.]\d*)?\s*[\+\-\*/%]?\s*)'
+        self.__expressao_aritmetica = '([+-]?\d+([.]\d*)?\s*[\+\-\*\/%]?)'
         self.__regex_identificador = re.compile(self.__IDENTIFICADOR)
-        self.__regex_funcao = re.compile(self.__declaracao_funcao)  # Corrigir
+        self.__regex_funcao = re.compile(self.__declaracao_funcao)
         self.__regex_type_int_float = re.compile(self.__tipo_float_int)
         self.__regex_chamada_funcao = re.compile(self.__chamada_funcao)
         self.__regex_literais_int_float = re.compile(self.__literais_int_float)
         self.__regex_variavel = re.compile(self.__variavel)
-        self.__regex_expressao_aritmetica = re.compile(self.__expressao_aritmetica, flags=re.GLOBAL)
+        self.__regex_expressao_aritmetica = re.compile(self.__expressao_aritmetica)
 
     @staticmethod
     def __is_numeric(num):
@@ -68,7 +67,7 @@ class AnalisadorLexico:
         return False
 
     def __test_regex_expressao_aritmetica(self, s):
-        match = self.__regex_expressao_aritmetica.fullmatch(s)
+        match = self.__regex_expressao_aritmetica.findall(s)
         if match:
             return True
         return False
@@ -101,10 +100,8 @@ class AnalisadorLexico:
                     self.__test_regex_expressao_aritmetica(expr)
 
         if condition:
-            self.__get_tokens(re.split('[\s*]+', expr))
-        return f'Not valid expression'
-
-
+            self.__get_tokens(re.split('\s{1,}', expr))
+        return f'Expressão inválida'
 
 
 try:
