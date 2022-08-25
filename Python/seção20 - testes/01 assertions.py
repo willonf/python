@@ -14,7 +14,7 @@ def soma_num_positivos(a, b):
 
 def comer_fast_food(comida):
     assert comida in ['pizza', 'sorvete', 'hamburguer', 'batata frita'], 'Precisa ser um fast food'
-    return f'Estou comendo comida'
+    return 'Estou comendo comida'
 
 
 comida1 = 'churrasco'

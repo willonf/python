@@ -1,5 +1,6 @@
 import timeit
 
+
 def sum1(n):
     soma = 0
     for number in range(n+1):

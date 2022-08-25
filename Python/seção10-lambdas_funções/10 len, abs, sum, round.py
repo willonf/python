@@ -16,5 +16,3 @@ print(round(4.54))
 print(round(4.54323, 3))
 print(round(4.5))
 print(round(4.55559, 3))
-
-

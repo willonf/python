@@ -25,8 +25,6 @@ class Animal:
         print(f'{self.nome} está comendo...')
 
 
-
-
 class Gato(Animal):
     def __init__(self, nome):
         super().__init__(nome)
@@ -41,6 +39,7 @@ class Cachorro(Animal):
 
     def late(self):
         print(f'{self.nome} está latindo...')
+
 
 # Escrita de arquivos pickle
 felix = Gato('Felix')

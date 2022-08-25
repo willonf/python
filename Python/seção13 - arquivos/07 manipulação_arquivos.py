@@ -10,7 +10,7 @@ os.mknod() -> criar novo arquivo
 Obs.: essa remoção não manda os arquivos para a lixeira.
 Par mandar para a lixeira, usar pacote sendToTrash
 """
-import os
+# import os
 import tempfile
 
 #

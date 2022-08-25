@@ -16,3 +16,6 @@ elementos na programação
 
 import primeiro
 import segundo
+
+primeiro.message()
+segundo.message2()

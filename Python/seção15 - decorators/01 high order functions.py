@@ -4,6 +4,9 @@ Funções que podem retornar outras funções ou usá-las como parâmetros.
 """
 
 
+from random import choice
+
+
 def somar(a, b):
     return a + b
 
@@ -23,8 +26,6 @@ print(calcular(2, 3, produto))
 Nested functions ou Inner functions: funções dentro de funções (funções internas)
 """
 
-from random import choice
-
 
 def cumprimento(pessoa):
     def humor():
@@ -38,8 +39,6 @@ print(cumprimento('Nolliw'))
 print(cumprimento('Nolliw'))
 
 # Retornando funções de outras funções
-
-from random import choice
 
 
 def faz_me_rir():

@@ -5,7 +5,8 @@ writerow() - escrever uma linha
 
 """
 
-from csv import writer, DictWriter
+# from csv import writer
+from csv import DictWriter
 
 # with open(file='filmes.csv', mode='w', encoding='utf-8') as arquivo:
 #     escritor_csv = writer(arquivo)

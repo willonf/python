@@ -6,6 +6,13 @@
 """
 
 
+from typing import Protocol
+from typing import TypedDict
+from typing import Final
+from typing import Union
+from typing import Literal
+
+
 def dobro(num: int) -> int:
     return 2 * num
 
@@ -14,7 +21,6 @@ print(dobro(2))
 print(dobro('Will'))  # Com o pacote mypy é possível evitar isso
 
 # Literal type
-from typing import Literal
 
 
 # A função pegar_status retornará uma string ('conectado' ou 'desconectado'
@@ -34,7 +40,6 @@ calcula('*', 2, 3)
 
 # Union
 # O union pode unir tipos de retorno
-from typing import Union
 
 
 def soma(num1: int, num2: int) -> Union[str, int]:
@@ -50,38 +55,34 @@ print(soma(50, 5))
 
 # Final
 
-from typing import Final
 
 NOME: Final = 'Geek'
 
 print(NOME)
-NOME = 'WILL'
-
-from typing import final
+# NOME = 'WILL'
 
 
-@final
-class Pessoa:
-    pass
+# @final
+# class Pessoa:
+#     pass
 
 
-class Estudante(Pessoa):
-    pass
+# class Estudante(Pessoa):
+#     pass
 
-    @final
-    def estudar(self):
-        print('Estou estudando...')
+#     @final
+#     def estudar(self):
+#         print('Estou estudando...')
 
 
-class Estagiario(Estudante):
-    pass
+# class Estagiario(Estudante):
+#     pass
 
-    def estudar(self):
-        print('Estou estudando e estagiando...')
+#     def estudar(self):
+#         print('Estou estudando e estagiando...')
 
 
 # Typed dicts
-from typing import TypedDict
 
 
 class CursoPython(TypedDict):
@@ -95,8 +96,6 @@ print(geek)
 print(geek2)
 
 # Protocols
-
-from typing import Protocol
 
 
 class Curso(Protocol):

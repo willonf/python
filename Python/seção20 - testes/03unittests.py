@@ -13,7 +13,7 @@ setup() -> método executado antes de cada método de teste.
 
 tearDown() -> é executado ao final de cada método de teste.
     Útil para excluir dados ou fechar conexões com banco de dados.
-    
+
 setUpClass
 tearDownClass
 

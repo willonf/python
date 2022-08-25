@@ -10,4 +10,3 @@ with open('text') as file:
 
 print(file.closed)
 print(file.closed)
-

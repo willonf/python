@@ -3,6 +3,7 @@ Collection Default Dict
 """
 
 # Dicionário em Python
+from collections import defaultdict
 dicionario = {'curso': 'Python', 'plataforma': 'Udemy'}
 print(dicionario)
 print(dicionario['curso'])
@@ -12,7 +13,6 @@ print('+=+=+=+=+=+=+=+=+=+=+=+=+=+=')
 # Não gera key error, pois um valor default é informado, utilizando um lambda.
 # Assim, se uma chave for inexistente no dicionário, a chave é criada com o valor padrão
 
-from collections import defaultdict
 
 dicionario = defaultdict(lambda: 0)
 dicionario['curso'] = 'Python'

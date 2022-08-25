@@ -8,7 +8,10 @@ from functools import reduce
 
 dados = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-produto = lambda x, y: x * y  # Aconselhável utilizar declaração def
+
+def produto(x, y): return x * y  # Aconselhável utilizar declaração def
+
+
 result = reduce(produto, dados)
 print(result)
 print(30 * "+=")

@@ -22,7 +22,7 @@ print(Counter('Willon Ferreira'))
 texto = '''Python é uma linguagem de programação de alto nível,
 interpretada de script, imperativa, orientada a objetos, funcional,
 de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.
-Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado 
+Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado
 pela organização sem fins lucrativos Python Software Foundation.
 '''
 
@@ -32,4 +32,3 @@ res = Counter(palavras)
 print(res)
 print(res.most_common(5))
 print(res.most_common(10))
-

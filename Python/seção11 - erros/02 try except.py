@@ -53,6 +53,7 @@ def pega_valor(dicionario, chave):
     # except TypeError:
     #     return None
 
+
 dic = {'nome': 'Will'}
 print(pega_valor(dic, 'nome'))
 print(pega_valor(1, 'name'))

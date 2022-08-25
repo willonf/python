@@ -1,4 +1,5 @@
-import json, jsonpickle
+import json
+import jsonpickle
 
 # O dumps serializa um objeto python em json
 ret = json.dumps(['produto', {'Playstation 4': ('2TB', 'Novo', '220v', 2340)}])

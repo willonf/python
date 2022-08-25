@@ -55,4 +55,3 @@ prod1 = Produto("Notebook", "Notebook Dell Inspiron", 5000.99)
 # print(f'lamp1 está ligada: {lamp1.ligada}')
 
 print(prod1._Produto__nome)  # Name mangling. Não recomendado
-

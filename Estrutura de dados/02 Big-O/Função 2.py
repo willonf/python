@@ -7,6 +7,7 @@ def lista1():
         lista.append(i)  # ou lista += [i]
     return lista
 
+
 def lista2():
     return range(1000)
 
@@ -19,8 +20,8 @@ time1 = end - start
 print(30*'+=')
 
 start = timeit.default_timer()
-l = lista2()
-for i in l:
+lista = lista2()
+for i in lista:
     print(i, end=' ')
 end = timeit.default_timer()
 time2 = end - start

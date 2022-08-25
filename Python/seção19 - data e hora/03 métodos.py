@@ -1,4 +1,5 @@
-import datetime, timeit
+import datetime
+import timeit
 
 # Timezones
 

@@ -32,7 +32,7 @@ def dividir(a, b):
     try:
         return a / b
     except ZeroDivisionError as err:
-       return f'Ocorreu um erro: {err}'
+        return f'Ocorreu um erro: {err}'
     except TypeError:
         return 'Tipo de argumento incorreto'
 

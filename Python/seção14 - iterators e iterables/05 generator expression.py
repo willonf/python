@@ -1,3 +1,6 @@
+import time
+
+
 def nums():
     for num in range(1, 11):
         yield num
@@ -19,7 +22,6 @@ print(next(gen2))
 print(next(gen2))
 print(25 * '+=')
 
-import time
 
 # Generator Expression
 gen_inicio = time.time()

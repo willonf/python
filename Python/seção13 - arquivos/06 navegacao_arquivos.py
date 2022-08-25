@@ -12,6 +12,7 @@ sys.platform -> SO
 .os.scandir() -> listar o diretório com mais detalhes (Necessário fechar depois de aberto. Usar com with)
 """
 
+import sys
 import os
 
 print(os.getcwd())
@@ -33,7 +34,6 @@ print(os.name)
 # print(os.uname())
 
 # No windows:
-import sys
 
 print(sys.platform)
 
