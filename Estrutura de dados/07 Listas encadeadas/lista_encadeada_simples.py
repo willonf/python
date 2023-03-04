@@ -65,7 +65,6 @@ class LinkedList:
         return current
 
 
-
 if __name__ == '__main__':
     node = Node(5)
     linked_list = LinkedList()
